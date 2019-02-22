@@ -1,0 +1,45 @@
+.App {
+    min-height: 800px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius:0px;
+}
+
+.app-name{
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn{
+    margin: 3px;
+}
+
+.bookmark-container {
+    width:100%;
+}
+
+.bookmark-content {
+    display: inline-block;
+    margin: 3px 10px 3px 10px;
+    text-align: left;
+}
+.bookmark-x-icon
+{
+  display: inline-block;
+  width:5%;
+  max-width: 20px;
+  height:20px;
+  vertical-align: middle;
+  box-sizing:border-box;
+  border-width:3px;
+  border-style: solid;
+  border-color:#969494;
+  border-radius:100%;
+  background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%);
+  background-color:gray;
+  /* box-shadow:0px 0px 5px 2px rgba(0,0,0,0.5); */
+  transition: all 0.3s ease;
+  cursor: pointer;
+}

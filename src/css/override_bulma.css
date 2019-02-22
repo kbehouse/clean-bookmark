@@ -1,0 +1,62 @@
+/*
+ * labelの横並び表示には
+ * min-width: 769px の制限があったのでoverride
+ */
+
+.field.is-horizontal {
+  display: flex;
+}
+
+.field-label .label {
+  font-size: inherit;
+}
+
+.field-label {
+  margin-bottom: 0.5rem;
+}
+
+.field-label {
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-right: 1.5rem;
+  text-align: right;
+}
+.field-label.is-small {
+  font-size: 0.75rem;
+  padding-top: 0.375em;
+}
+.field-label.is-normal {
+  padding-top: 0.375em;
+}
+.field-label.is-medium {
+  font-size: 1.25rem;
+  padding-top: 0.375em;
+}
+.field-label.is-large {
+  font-size: 1.5rem;
+  padding-top: 0.375em;
+}
+
+.field-body .field .field {
+  margin-bottom: 0;
+}
+
+.field-body {
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 5;
+  flex-shrink: 1;
+}
+.field-body .field {
+  margin-bottom: 0;
+}
+.field-body > .field {
+  flex-shrink: 1;
+}
+.field-body > .field:not(.is-narrow) {
+  flex-grow: 1;
+}
+.field-body > .field:not(:last-child) {
+  margin-right: 0.75rem;
+}
