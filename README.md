@@ -1,6 +1,6 @@
-# Autobuild React App for Chrome Extension
+# Clean Bookmark
 
-This is a simple chrome extension and it is built with React. It can auto build (boilerplate) when the development time .
+This is a simple chrome extension for clean bookmarks. It can find empty directories, duplicate name, and duplicate URL of bookmark in chrome.
 
 ## Usage
 
@@ -15,11 +15,3 @@ yarn start
     2. Check `Developer mode`
     3. Click on `Load unpacked extension`
     4. Select the `build` folder.
-
-
-## Acknowledgement
-The simple extension is integrated by the following repos:
-
-1. [chrome-extension-webpack-boilerplate](https://github.com/samuelsimoes/chrome-extension-webpack-boilerplate/tree/react)
-for autobuild
-2. [tmp-bookmark](https://github.com/nomuyoshi/tmp-bookmark) for simple react

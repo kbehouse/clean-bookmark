@@ -5,19 +5,23 @@
     Bookmark = node 
 */
 import React, { Component } from 'react';
-import {Button} from 'react-bootstrap'
 
 class Bookmark extends Component {
   constructor(props) {
     super(props);
     this.state = { node: props.node, path:'' };
     this.show_path(props.node);
+    // console.log(props.node.title);
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log('in componentWillReceiveProps');
+    // console.log('in componentWillReceiveProps');
     this.setState({ node: nextProps.node });
     this.show_path(nextProps.node);
+  }
+
+  shouldComponentUpdate(nextProps, nextState){
+    return (this.props.node!=nextProps.node || this.state.path!=nextState.path);
   }
 
   show_path(node){
@@ -51,7 +55,11 @@ class Bookmark extends Component {
   }
 
   render() {
+    
+    // console.log(this.state.node.title);
     const path = this.state.path; 
+
+    // console.log('Render: ' + path);
     return path;
   }
 }

@@ -20,6 +20,17 @@
     width:100%;
 }
 
+.bookmark-title {
+    display: inline-block;
+    font-size: 1.75rem;
+}
+
+.bookmark-subtitle {
+    display: inline-block;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
 .bookmark-content {
     display: inline-block;
     margin: 3px 10px 3px 10px;
