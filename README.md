@@ -15,3 +15,7 @@ yarn start
     2. Check `Developer mode`
     3. Click on `Load unpacked extension`
     4. Select the `build` folder.
+    
+3. Chrome Store:
+
+    https://chrome.google.com/webstore/detail/clean-bookmark/jpjlngakachakfbbpipgkadjaalmpcjm
